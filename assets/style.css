@@ -1,0 +1,18 @@
+h1 {
+  padding-top: 7.2rem;
+}
+
+.note {
+  border: 0;
+  border-left: .3rem solid #9b4dca;
+  display: block;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: #f4f5f6;
+}
+
+textarea {
+  height: 10em;
+  padding: 1em;
+}

@@ -1,0 +1,16 @@
+{% extends "base.njk" %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="column column-50">
+      <h1>YouNote</h1>
+      <form action="/dashboard">
+        <label for="uname">username:</label>
+        <input type="text" id="username" name="uname"><br><br>
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

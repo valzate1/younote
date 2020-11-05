@@ -1,0 +1,21 @@
+{% extends "base.njk" %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="column column-50">
+      <h1>Welcome {{ nickname }}!</h1>
+      <form action="/note">
+        <textarea name="content">Write your note here.</textarea>
+        <input type="submit" value="Save!">
+      </form>
+      <h2>Your Notes</h2>
+      {% for note in notes %}
+        <div class="note">{{ note.content }}</div>
+      {% else %}
+        <p>You don't have any notes yet!</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
