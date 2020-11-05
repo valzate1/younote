@@ -3,7 +3,7 @@ const nunjucks = require("nunjucks");
 const app = express();
 const port = process.env.PORT || 7000;
 const axios = require("axios");
-const API_URL = "https://younote-api-db.herokuapp.com/";
+const API_URL = "https://younote-api-db.herokuapp.com";
 
 
 nunjucks.configure("views", {
